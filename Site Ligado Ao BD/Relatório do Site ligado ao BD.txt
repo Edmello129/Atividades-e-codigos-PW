@@ -1,0 +1,7 @@
+Relatório do site ligado ao banco de dados 
+Eduardo l. & Matheus G. 
+
+
+
+
+A criação do site, foi tranquila, as "linkagens" não foram tarefas difíceis, o real desafio foi o JS, dá um trabalho para organizar tudo com o banco de dados, usamos o supabase, por ter o GitHub como ajuda, nosso site, foi inspirado em um meme e um café da manhã de muitas pessoas: café e tapioca, personalizei para que tenha o modo tapioca, com cores beges e brancas, o modo café tem a cor marrom escuro e claro, optei por deixar o fundo branco, como um cardápio sofisticado, criei uma subpágina para cada café e para cada tapioca, com descrições sobre cada um, usei os módulos que o professor pediu, mas faltou alguns que optei por não usar, como a de pesquisa no site, mas mesmo assim, ficou um bom site. S

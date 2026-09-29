@@ -1,0 +1,263 @@
+:root {
+    --fundo-site: #FDFBF7; 
+    --fundo-cabecalho: #EAE0D5;
+    --fundo-cartao: #FFFFFF;
+    --texto-principal: #333333;
+    --texto-secundario: #555555;
+    --cor-destaque: #C9A66B; 
+}
+
+
+
+:root {
+    --fundo-site: #FDFBF7; 
+    --fundo-cabecalho: #EAE0D5;
+    --fundo-cartao: #FFFFFF;
+    --texto-principal: #333333; /* Texto escuro para modo claro */
+    --texto-secundario: #555555;
+    --cor-destaque: #C9A66B; 
+}
+
+/* Modo Escuro (Café) - Ativado no JS */
+body.bnt-tema {
+    --fundo-site: #221511; 
+    --fundo-cabecalho: #140C0A;
+    --fundo-cartao: #3E2723;
+    --texto-principal: #F5DEB3; /* Texto CLARO (creme) para aparecer no modo escuro */
+    --texto-secundario: #D7CCC8;
+    --cor-destaque: #D2691E; 
+}
+:root {
+    --fundo-site: #FDFBF7; 
+    --fundo-cabecalho: #EAE0D5;
+    --fundo-cartao: #FFFFFF;
+    --texto-principal: #333333;
+    --texto-secundario: #555555;
+    --cor-destaque: #C9A66B; 
+}
+
+/* É AQUI QUE A MÁGICA ACONTECE */
+body.tema-cafe {
+    --fundo-site: #221511; 
+    --fundo-cabecalho: #140C0A;
+    --fundo-cartao: #3E2723;
+    --texto-principal: #F5DEB3; 
+    --texto-secundario: #D7CCC8;
+    --cor-destaque: #D2691E; 
+}
+
+body {
+    background-color: var(--fundo-site);
+    color: var(--texto-principal);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* =========================================
+   APLICANDO AS CORES NO CORPO DO SITE
+========================================= */
+body {
+    background-color: var(--fundo-site);
+    color: var(--texto-principal); /* Isso diz para o site TODO usar a cor do texto certa */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fundo-site);
+    color: var(--texto-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+
+header {
+    background-color: var(--fundo-cabecalho);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.5s ease;
+}
+
+#btn-tema {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--cor-destaque);
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.5s ease;
+}
+
+#btn-tema:hover {
+    transform: scale(1.05);
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#descricao-tema {
+    color: var(--texto-secundario);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+
+.grade-cartoes {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cartao {
+    background-color: var(--fundo-cartao);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 6px solid var(--cor-destaque);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.2s;
+}
+
+.cartao:hover {
+    transform: translateY(-5px); 
+}
+
+.cartao h3 {
+    margin-bottom: 10px;
+    color: var(--cor-destaque);
+}
+
+.cartao p {
+    color: var(--texto-secundario);
+    line-height: 1.5;
+}
+
+.link-cartao {
+    text-decoration: none;
+    color: inherit;
+    display: block; 
+}
+
+.veja-mais {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+.img-cartao {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+}
+
+
+.cartao:hover .img-cartao {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+.img-destaque {
+    width: 100%;
+    max-height: 400px; 
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.img-destaque {
+    width: 100%;
+    max-height: 400px; 
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.imagem-cartao {
+    width: 100%;            
+    height: 200px;          
+    object-fit: cover;       
+    border-radius: 8px;      
+    margin-top: 15px;        
+    margin-bottom: 15px;     
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+
+.cartao:hover .imagem-cartao {
+    transform: scale(1.03);
+}
+
+.img-destaque {
+    width: 100%;
+    max-height: 400px;       
+    object-fit: cover;       
+    border-radius: 12px;     
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+.link-voltar {
+    display: inline-block;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão de voltar */
+.link-voltar:hover {
+    background-color: var(--cor-destaque);
+    color: var(--fundo-site); /* Puxa a cor do fundo para dar contraste */
+    transform: translateX(-5px); /* Efeito sutil empurrando para a esquerda */
+}
+/* Cores padrão (Modo Tapioca - Claro) */
+body {
+    background-color: #fdf5e6; /* Cor de fundo clara */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Cores do Modo Café (Escuro) */
+body.modo-cafe {
+    background-color: #3e2723; /* Marrom escuro */
+    color: #efebe9; /* Texto claro */
+}
+
+/* Exemplo para escurecer os cartões no Modo Café */
+body.modo-cafe .cartao {
+    background-color: #5d4037;
+    color: #ffffff;
+    border-color: #4e342e;
+}
+
+body.modo-cafe .veja-mais {
+    color: #ffcc80; /* Um tom de laranja/creme para contrastar */
+}
